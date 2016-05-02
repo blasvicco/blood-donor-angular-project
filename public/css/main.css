@@ -1,0 +1,247 @@
+#map {
+	height: 620px;
+	width: 1140px;
+	position: relative;
+}
+
+#search {
+	display: block;
+	position: relative;
+	z-index: 3;
+	top: 65px;
+	left: 75px;
+}
+
+.elegant-aero {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	max-width: 600px;
+	background: #D2E9FF;
+	padding: 20px 20px 20px 20px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #666;
+	height: 400px;
+}
+
+.elegant-aero label {
+	display: block;
+	margin: 0px 0px 5px;
+}
+
+.elegant-aero select, input[type="text"], .elegant-aero input[type="email"] {
+	color: #888;
+	width: 60%;
+	padding: 0px 0px 0px 5px;
+	border: 1px solid #C5E2FF;
+	background: #FBFBFB;
+	outline: 0;
+	-webkit-box-shadow: inset 0px 1px 6px #ECF3F5;
+	box-shadow: inset 0px 1px 6px #ECF3F5;
+	font: 200 12px/25px Arial, Helvetica, sans-serif;
+	height: 30px;
+	line-height: 15px;
+	margin: 2px 6px 16px 0px;
+}
+
+.elegant-aero input[type="button"] {
+	float: right;
+	margin-right: 5%;
+	width: 80px;
+}
+
+.elegant-aero div {
+  display:inline-block;
+  vertical-align:top;
+  color: red;
+  margin-top: 5px;
+}
+
+.back_overlay {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity = 80);
+}
+
+.front_content {
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	width: 60%;
+	height: 80%;
+	padding: 16px;
+	border: 4px solid orange;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+
+.hide {
+	display: none;
+}
+
+.h4Centered {
+	width: 100%;
+	text-align: center;
+}
+
+body {
+    padding: 0;
+}
+
+/* Alert */
+
+#msg {
+    z-index: 5000;
+    position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+}
+#msg:hover:before {
+    border-bottom: 10px solid hsla(0,0%,0%,.8);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    top: 40px;
+    width: 0;
+}
+.info {
+	background-color: #0022eb;
+    color: #f6f6f6;
+}
+.success {
+	background-color: #43cd08;
+    color: #f6f6f6;
+}
+.warning {
+	background-color: #f5e413;
+    color: #000;
+}
+.error {
+    background-color: #c4453c;
+    color: #f6f6f6;
+}
+.alert {
+    background-image: -webkit-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.05) 25%,
+                      hsla(0,0%,0%,.05) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.05) 75%,
+                      hsla(0,0%,0%,.05));
+    background-image: -moz-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-image: -ms-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-image: -o-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-image: linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-size: 20px 20px;
+    box-shadow: 0 5px 0 hsla(0,0%,0%,.1);
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: -45px;
+    width: 100%;
+    -webkit-animation: alert 1s ease forwards;
+       -moz-animation: alert 1s ease forwards;
+        -ms-animation: alert 1s ease forwards;
+         -o-animation: alert 1s ease forwards;
+            animation: alert 1s ease forwards;
+}
+
+.alert {
+    
+    background-image: -webkit-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.05) 25%,
+                      hsla(0,0%,0%,.05) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.05) 75%,
+                      hsla(0,0%,0%,.05));
+    background-image: -moz-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-image: -ms-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-image: -o-linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-image: linear-gradient(135deg, transparent,
+                      transparent 25%, hsla(0,0%,0%,.1) 25%,
+                      hsla(0,0%,0%,.1) 50%, transparent 50%,
+                      transparent 75%, hsla(0,0%,0%,.1) 75%,
+                      hsla(0,0%,0%,.1));
+    background-size: 20px 20px;
+    box-shadow: 0 5px 0 hsla(0,0%,0%,.1);
+    color: #f6f6f6;
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: -45px;
+    width: 100%;
+    -webkit-animation: alert 1s ease forwards;
+       -moz-animation: alert 1s ease forwards;
+        -ms-animation: alert 1s ease forwards;
+         -o-animation: alert 1s ease forwards;
+            animation: alert 1s ease forwards;
+}
+
+/* Animation */
+
+@-webkit-keyframes alert {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { top: 0; }
+}
+@-moz-keyframes alert {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { top: 0; }
+}
+@-ms-keyframes alert {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { top: 0; }
+}
+@-o-keyframes alert {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { top: 0; }
+}
+@keyframes alert {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { top: 0; }
+}

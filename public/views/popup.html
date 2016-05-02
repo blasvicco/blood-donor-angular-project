@@ -1,0 +1,58 @@
+<h4 class="h4Centered">Become a Donor!</h4>
+<form id="donorForm" name="donorForm" class="elegant-aero" ng-controller="PersonCtrl">
+	<label>First Name: </label> <input type="text" name="firstName"
+		ng-model="Person.firstName" required
+		ng-pattern="/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð '-]+$/" />
+	<div ng-messages="donorForm.firstName.$error">
+		<div ng-message="required">This field is required</div>
+		<div ng-message="pattern">Not valid first name</div>
+	</div>
+
+	<label>Last Name: </label> <input type="text" name="lastName"
+		ng-model="Person.lastName" required
+		ng-pattern="/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð '-]+$/" />
+	<div ng-messages="donorForm.lastName.$error">
+		<div ng-message="required">This field is required</div>
+		<div ng-message="pattern">Not valid last name</div>
+	</div>
+
+	<label>Contact Number: </label> <input type="text" name="contactNumber"
+		ng-model="Person.contactNumber" required
+		ng-pattern="/^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?){0,})(?:[\-\.\ \\\/]?(?:#|\.?|x)[\-\.\ \\\/]?(\d+))?$/" />
+	<div ng-messages="donorForm.contactNumber.$error">
+		<div ng-message="required">This field is required</div>
+		<div ng-message="pattern">Not valid contact number</div>
+	</div>
+
+	<label>E-mail: </label> <input type="email" name="emailAddress"
+		ng-model="Person.emailAddress" required
+		ng-pattern="/^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/" />
+	<div ng-messages="donorForm.emailAddress.$error">
+		<div ng-message="required">This field is required</div>
+		<div ng-message="pattern">Not valid email</div>
+	</div>
+
+	<label>Blood Type: </label> <select name="bloodType"
+		ng-model="Person.bloodType" required
+		ng-pattern="/(O-|O+|A-|A+|B-|B+|AB-|AB+)/">
+		<option values="O-">O-</option>
+		<option values="O+">O+</option>
+		<option values="A-">A-</option>
+		<option values="A+">A+</option>
+		<option values="B-">B-</option>
+		<option values="B+">B+</option>
+		<option values="AB-">AB-</option>
+		<option values="AB+">AB+</option>
+	</select>
+	<div ng-messages="donorForm.bloodType.$error">
+		<div ng-message="required">This field is required</div>
+		<div ng-message="pattern">Not valid blood type</div>
+	</div>
+	
+	<p>
+		<input type="hidden" id="_id" name="_id" ng-model="Person._id" />
+		<input type="button" ng-click="donorForm.$valid && update(user)" value="Save" />
+		<input type="button" id="deleteButton" ng-click="setDeleted(user)" class="hide" value="Delete" />
+		<input type="button" ng-click="closePopUp()" value="Cancel" />
+	</p>
+</form>
