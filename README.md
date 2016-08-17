@@ -7,10 +7,10 @@ The email include a link to edit the donor information even delete it.
 The map that show the donors will update automatically after a new donor is added or updated in the view range of the clients.
 The contact info of the donors will be hidden until the visitors click on it to avoid robot spams.
 
-##### Online running project:
+##### Live project:
 https://quiet-fjord-59665.herokuapp.com/
 
-##### Some of the technologies used in this projects are:
+##### Some of the technologies used in this project are:
   - Node.js
   - Express framework
   - Socket.io
