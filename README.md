@@ -8,7 +8,7 @@ The map that show the donors will update automatically after a new donor is adde
 The contact info of the donors will be hidden until the visitors click on it to avoid robot spams.
 
 ##### Live project:
-https://quiet-fjord-59665.herokuapp.com/
+https://blood-donor-angular-project.herokuapp.com/
 
 ##### Some of the technologies used in this project are:
   - Node.js
