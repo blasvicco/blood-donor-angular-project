@@ -19,5 +19,8 @@
     "karma-requirejs": "^0.2.6",
     "requirejs": "^2.2.0",
     "requirejs-text": "^2.0.12"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
