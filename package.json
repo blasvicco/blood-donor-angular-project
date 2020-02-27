@@ -3,6 +3,7 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bower": "0.6.x",
     "bson": "^1.0.4",
     "express": "^4.17.1",
     "method-override": ">=2.3.10",
@@ -22,6 +23,7 @@
     "requirejs-text": "^2.0.12"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
