@@ -3,7 +3,7 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "bower": "0.6.x",
+    "bower": "1.8.x",
     "bson": "^1.0.4",
     "express": "^4.17.1",
     "method-override": ">=2.3.10",
