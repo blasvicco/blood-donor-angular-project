@@ -12,7 +12,7 @@ var mongoose		= require('mongoose');
 // configuration ===========================================
 
 //connect to our mongoDB database
-console.log(`Connecting to DB: ${db.url)}`);
+console.log('Connecting to DB: ' + db.url);
 mongoose.connect(db.url);
 
 // set our port
