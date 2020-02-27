@@ -11,11 +11,11 @@
     "mongoose-double": "0.0.1",
     "mongoose-types": "^1.0.3",
     "nodemailer": "^2.3.0",
-    "socket.io": "^1.4.5"
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "jasmine-core": "^2.4.1",
-    "karma": "^0.13.22",
+    "karma": "^4.4.1",
     "karma-chrome-launcher": "^0.2.3",
     "karma-jasmine": "^0.3.8",
     "karma-requirejs": "^0.2.6",

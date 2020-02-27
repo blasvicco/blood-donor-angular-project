@@ -5,7 +5,7 @@
     "bootstrap": "latest",
     "font-awesome": "latest",
     "animate.css": "latest",
-    "angular": "latest",
+    "angular": "1.7.9",
     "angular-messages": "latest",
     "angular-route": "latest",
     "angularAMD": "latest",
@@ -16,6 +16,6 @@
     "text": "requirejs-text#^2.0.15"
   },
   "resolutions": {
-    "angular": "1.2.0"
+    "angular": "1.7.9"
   }
 }
