@@ -2,7 +2,7 @@
 // grab the nerd model we just created
 
 var Person = require('./models/person');
-var email = require('./helpers/emailHlpr');
+// var email = require('./helpers/emailHlpr');
 var ObjectId = require('mongoose').Types.ObjectId;
 var path = require('path');
 module.exports = function(app, socket, smtp) {
@@ -63,8 +63,8 @@ module.exports = function(app, socket, smtp) {
           client.emit('becomeDonorResponse', data);
           if (!err) {
             // send email
-            var host = client.handshake.headers.referer.match(/^(http[s]?):\/\/([a-zA-Z0-9-_\.]+)(:[0-9]+)?/);
-            email.sendAccountActivation(person, host[0], smtp);
+            // var host = client.handshake.headers.referer.match(/^(http[s]?):\/\/([a-zA-Z0-9-_\.]+)(:[0-9]+)?/);
+            // email.sendAccountActivation(person, host[0], smtp);
             console.log('Broadcast new Donor');
             client.broadcast.emit('newDonor', data);
           }
@@ -103,8 +103,8 @@ module.exports = function(app, socket, smtp) {
         client.broadcast.emit('deletedDonor', data);
         client.emit('deletedDonor', data);
         // send email
-        var host = client.handshake.headers.referer.match(/^(http[s]?):\/\/([a-zA-Z0-9-_\.]+)(:[0-9]+)?/);
-        email.sendAccountRecoveryNotification(req, host[0], smtp);
+        // var host = client.handshake.headers.referer.match(/^(http[s]?):\/\/([a-zA-Z0-9-_\.]+)(:[0-9]+)?/);
+        // email.sendAccountRecoveryNotification(req, host[0], smtp);
       });
     });
 
