@@ -13,7 +13,7 @@ var mongoose		= require('mongoose');
 
 //connect to our mongoDB database
 console.log('Connecting to DB: ' + db.url);
-mongoose.connect(db.url);
+mongoose.connect(db.url, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // set our port
 var port = process.env.PORT || 8080;
