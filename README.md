@@ -7,7 +7,10 @@ The email include a link to edit the donor information even delete it.
 The map that show the donors will update automatically after a new donor is added or updated in the view range of the clients.
 The contact info of the donors will be hidden until the visitors click on it to avoid robot spams.
 
-##### Some of the technologies used in this project are:
+### Live demo
+- [https://blood-donor-angular-project.herokuapp.com/](https://blood-donor-angular-project.herokuapp.com/)
+
+### Some of the technologies used in this project are:
   - Node.js
   - Express framework
   - Socket.io
@@ -15,7 +18,7 @@ The contact info of the donors will be hidden until the visitors click on it to 
   - Mongo DB
   - Karma + Jasmine
 
-##### Some external libs:
+### Some external libs:
   - mongoose (http://mongoosejs.com)
   - mongoose-types (https://github.com/bnoguchi/mongoose-types)
   - mongoose-double (https://github.com/aheckmann/mongoose-double)
